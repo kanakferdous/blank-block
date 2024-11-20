@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/heading",
+	"version": "0.1.0",
+	"title": "Heading",
+	"category": "alterblocks",
+	"icon": "smiley",
+	"description": "A customizable heading block for AlterBlocks.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+		"attributes": {
+		"blockDataId": {
+			"type": "string"
+		},
+		"typography": {
+			"type": "object",
+			"default": {
+				"desktop": {
+					"color": "#1f1f1f",
+					"fontSize": "48px",
+					"lineHeight": "2",
+					"fontWeight": "600",
+					"textAlign": "left"
+				},
+				"tablet": {
+					"color": "#ED6A5E",
+					"fontSize": "36px",
+					"lineHeight": "1.5",
+					"fontWeight": "500",
+					"textAlign": "right"
+				},
+				"mobile": {
+					"color": "#377771",
+					"fontSize": "24px",
+					"lineHeight": "1.2",
+					"fontWeight": "400",
+					"textAlign": "center"
+				}
+			}
+		}
+	},
+	"textdomain": "alterblocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
